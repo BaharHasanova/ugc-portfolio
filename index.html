@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahara — UGC Creator Portfolio</title>
+  <meta name="description"
+    content="UGC content creator portfolio — lifestyle, beauty, fashion & food content that converts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">bahara.</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#stats-infographic">Stats</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="btn-nav">Work With Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#videos">Videos</a>
+      <a href="#stats-infographic">Stats</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Work With Me</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-tag">✦ UGC Content Creator</p>
+      <h1>Content that <em>connects</em><br />& converts.</h1>
+      <p class="hero-sub">I create authentic, scroll-stopping content for brands in beauty, lifestyle, fashion & food.
+      </p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Collab</a>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img src="media/main_image.jpeg" alt="UGC Content Creation" />
+    </div>
+    <div class="scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <p class="section-tag">✦ About Me</p>
+        <h2>Hi, I'm <em>Bahara</em> —<br />a creator who makes brands feel real.</h2>
+        <p>I specialize in user-generated content that feels genuine, not staged. My content blends aesthetic visuals
+          with authentic storytelling to help brands connect with modern audiences on TikTok, Instagram, and beyond.</p>
+        <p>Whether it's a skincare unboxing, a cozy lifestyle video, or a fashion haul — I bring your brand to life in a
+          way that resonates and converts.</p>
+        <div class="niches">
+          <span>Beauty</span>
+          <span>Skincare</span>
+          <span>Fashion</span>
+          <span>Lifestyle</span>
+          <span>Food & Wellness</span>
+          <span>Home Decor</span>
+        </div>
+      </div>
+      <div class="about-img-wrap">
+        <img src="media/second_image.JPG" alt="Bahara - UGC Creator" />
+        <div class="about-badge">Available for collabs ✦</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-header">
+      <p class="section-tag">✦ Portfolio</p>
+      <h2>Recent <em>Work</em></h2>
+      <p class="section-sub">A curated selection of content created for brands across niches.</p>
+    </div>
+
+    <div class="filter-tabs" role="tablist">
+      <button class="tab active" data-filter="all">All</button>
+      <button class="tab" data-filter="beauty">Beauty</button>
+      <button class="tab" data-filter="fashion">Fashion</button>
+      <button class="tab" data-filter="food">Food</button>
+    </div>
+
+    <div class="portfolio-grid" id="portfolio-grid">
+      <div class="portfolio-card" data-category="food">
+        <div class="card-img-wrap">
+          <img src="media/yolo.jpg" alt="yolo" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Food / Cafe</span>
+            <p>Yolo</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="food">
+        <div class="card-img-wrap">
+          <img src="media/grumpy_bagel.jpg" alt="grumpy_bagel" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Food / Cafe</span>
+            <p>Grumpy Bagel</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="food">
+        <div class="card-img-wrap">
+          <img src="media/steakhouse.jpg" alt="steakhouse" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Food / Restaurant </span>
+            <p>Dining at Tony Roma</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="beauty">
+        <div class="card-img-wrap">
+          <img src="media/dior.jpeg" alt="Dior Palette" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche"> Beauty</span>
+            <p>Dior Palette</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="beauty">
+        <div class="card-img-wrap">
+          <img src="media/kerastase.jpeg" alt="kerastase" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Haircare / Beauty</span>
+            <p>Kerastase</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="fashion">
+        <div class="card-img-wrap">
+          <img src="media/outfit.jpeg" alt="outfit" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Fashion</span>
+            <p>Outfit (featuring top from 'Love, Bonito' and shorts from 'Uniqlo')</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="fashion">
+        <div class="card-img-wrap">
+          <img src="media/charles-keith.JPG" alt="charles-keith" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Fashion / Bags</span>
+            <p>Charles Keith Wallet</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="fashion">
+        <div class="card-img-wrap">
+          <img src="media/zara_dress.jpg" alt="outfit" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Fashion</span>
+            <p>Outfit (featuring dress from 'Zara')</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-card" data-category="beauty">
+        <div class="card-img-wrap">
+          <img src="media/victoria_secret.jpeg" alt="victoria_secret" loading="lazy" />
+          <div class="card-overlay">
+            <span class="card-niche">Victoria's Secret</span>
+            <p>Victoria's Secret Body Care</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SHOWCASE -->
+  <section id="videos">
+    <div class="section-header">
+      <p class="section-tag">✦ Video Content</p>
+      <h2>Watch My <em>Content</em></h2>
+      <p class="section-sub">Real videos I've created — lifestyle, unboxing & more.</p>
+    </div>
+    <div class="videos-grid">
+      <!-- Salon: Lash Lift -->
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/haI1HVF1xw4" title="Salon Day — Lash Lift UGC" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <span class="card-niche">Beauty ✦ Salon</span>
+          <p>Lash Lift Day Vlog</p>
+        </div>
+      </div>
+      <!-- Kindle Unboxing -->
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/nNMNoZKI_SA" title="Kindle Unboxing UGC" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <span class="card-niche">Unboxing ✦ Tech</span>
+          <p>Kindle Unboxing</p>
+        </div>
+      </div>
+      <!-- Steakhouse Dinner -->
+      <div class="video-card">
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/LWddiCW_WIM" title="Steakhouse Dinner UGC" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-meta">
+          <span class="card-niche">Food ✦ Dining</span>
+          <p>Steakhouse Dinner Night</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS INFOGRAPHIC -->
+  <section id="stats-infographic">
+    <div class="section-header">
+      <p class="section-tag">✦ By The Numbers</p>
+      <h2>Content that <em>Performs</em></h2>
+      <p class="section-sub">Real metrics from my Instagram professional dashboard.</p>
+    </div>
+    <div class="infographic-grid">
+
+      <!-- Instagram analytics screenshot -->
+      <div class="info-card info-screenshot-card">
+        <img src="media/ig_analytics.png" alt="Instagram Professional Dashboard — 2.0M views in the last 30 days" />
+      </div>
+
+      <!-- Bar chart: content breakdown -->
+      <div class="info-card">
+        <h3 class="info-card-title">Content Breakdown</h3>
+        <div class="bar-chart">
+          <div class="bar-row">
+            <span class="bar-label">Reels</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="78" style="--bar-color: var(--pink);"></div>
+            </div>
+            <span class="bar-val">78%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Photos</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="14" style="--bar-color: var(--lavender);"></div>
+            </div>
+            <span class="bar-val">14%</span>
+          </div>
+          <div class="bar-row">
+            <span class="bar-label">Stories</span>
+            <div class="bar-track">
+              <div class="bar-fill" data-width="8" style="--bar-color: var(--peach);"></div>
+            </div>
+            <span class="bar-val">8%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Niche donut-style rings -->
+      <div class="info-card">
+        <h3 class="info-card-title">Top Niches</h3>
+        <div class="niche-rings">
+          <div class="ring-item">
+            <svg class="ring-svg" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9" />
+              <circle class="ring-progress" cx="18" cy="18" r="15.9" data-pct="72" stroke="hsl(345,80%,72%)" />
+            </svg>
+            <span class="ring-label">Beauty<br />72%</span>
+          </div>
+          <div class="ring-item">
+            <svg class="ring-svg" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9" />
+              <circle class="ring-progress" cx="18" cy="18" r="15.9" data-pct="18" stroke="hsl(270,50%,75%)" />
+            </svg>
+            <span class="ring-label">Lifestyle<br />18%</span>
+          </div>
+          <div class="ring-item">
+            <svg class="ring-svg" viewBox="0 0 36 36">
+              <circle class="ring-bg" cx="18" cy="18" r="15.9" />
+              <circle class="ring-progress" cx="18" cy="18" r="15.9" data-pct="10" stroke="hsl(25,90%,78%)" />
+            </svg>
+            <span class="ring-label">Fashion<br />10%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini stat cards row -->
+      <div class="info-card info-mini-grid">
+        <div class="mini-stat">
+          <span class="mini-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="23 7 16 12 23 17 23 7" />
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+            </svg>
+          </span>
+          <span class="mini-num" data-count="200">0</span><span class="mini-unit">+</span>
+          <span class="mini-label">Videos Made</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </span>
+          <span class="mini-num">48</span><span class="mini-unit">hr</span>
+          <span class="mini-label">Delivery Time</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header">
+      <p class="section-tag">✦ Services</p>
+      <h2>What I <em>Offer</em></h2>
+      <p class="section-sub">Flexible packages tailored to your brand's needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="23 7 16 12 23 17 23 7" />
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+          </svg>
+        </div>
+        <h3>Video UGC</h3>
+        <p>Short-form video content for TikTok & Instagram Reels — unboxings, reviews, tutorials, and lifestyle
+          integrations.</p>
+        <ul>
+          <li>Raw footage included</li>
+          <li>Hook-first scripting</li>
+          <li>2 revision rounds</li>
+        </ul>
+      </div>
+      <div class="service-card featured">
+        <div class="featured-badge">Most Popular</div>
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="3" />
+            <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+          </svg>
+        </div>
+        <h3>Full UGC Package</h3>
+        <p>A complete content bundle — photos, videos, and static ads optimized for paid and organic use.</p>
+        <ul>
+          <li>5 photos + 3 videos</li>
+          <li>Usage rights included</li>
+          <li>Priority delivery</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" />
+          </svg>
+        </div>
+        <h3>Photo Content</h3>
+        <p>Aesthetic product photography and lifestyle flat lays styled to match your brand's visual identity.</p>
+        <ul>
+          <li>High-res edited photos</li>
+          <li>Multiple angles</li>
+          <li>Brand mood matching</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <p class="section-tag">✦ Contact</p>
+        <h2>Let's Create<br /><em>Together</em></h2>
+        <p>Ready to elevate your brand with content that actually converts? I'd love to hear about your project.</p>
+        <div class="contact-links">
+          <a href="mailto:bahara.ugc@gmail.com" class="contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+            bahara.ugc@gmail.com
+          </a>
+          <a href="https://instagram.com/b_hasanova_" target="_blank" rel="noopener" class="contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+            </svg>
+            @b_hasanova_
+          </a>
+          <!-- <a href="https://tiktok.com/@bahara" target="_blank" rel="noopener" class="contact-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+            </svg>
+            @bahara
+          </a> -->
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="hello@brand.com" required />
+        </div>
+        <div class="form-group">
+          <label for="brand">Brand / Company</label>
+          <input type="text" id="brand" name="brand" placeholder="Your brand name" />
+        </div>
+        <div class="form-group">
+          <label for="message">Tell me about your project</label>
+          <textarea id="message" name="message" rows="4" placeholder="What content do you need? Budget? Timeline?"
+            required></textarea>
+        </div>
+        <button type="submit" class="btn-primary full-width" id="submit-btn">Send Message ✦</button>
+        <p class="form-note" id="form-note"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bahara · UGC Creator · Made with love ✦</p>
+    <div class="footer-links">
+      <a href="https://instagram.com/b_hasanova_" target="_blank" rel="noopener">Instagram</a>
+      <!-- <a href="https://tiktok.com/@bahara" target="_blank" rel="noopener">TikTok</a> -->
+      <a href="mailto:bahara.ugc@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
