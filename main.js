@@ -110,37 +110,3 @@ const observer = new IntersectionObserver((entries) => {
 
 revealTargets.forEach(el => observer.observe(el));
 
-// ── Contact form ───────────────────────────────────────────────
-const form      = document.getElementById('contact-form');
-const note      = document.getElementById('form-note');
-const submitBtn = document.getElementById('submit-btn');
-
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  submitBtn.textContent = 'Sending…';
-  submitBtn.disabled = true;
-  note.textContent = '';
-
-  try {
-    const response = await fetch('https://formspree.io/f/xwvydgew', {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: new FormData(form)
-    });
-
-    if (response.ok) {
-      note.textContent = '✦ Message sent! I\'ll be in touch soon.';
-      note.style.color = 'var(--pink)';
-      form.reset();
-    } else {
-      note.textContent = '⚠️ Something went wrong. Please email me directly at bahara.ugc@gmail.com';
-      note.style.color = '#e57373';
-    }
-  } catch {
-    note.textContent = '⚠️ Network error. Please email me directly at bahara.ugc@gmail.com';
-    note.style.color = '#e57373';
-  }
-
-  submitBtn.textContent = 'Send Message ✦';
-  submitBtn.disabled = false;
-});
